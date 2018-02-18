@@ -1,0 +1,6 @@
+diamonds <- read.csv('C:\\Users\\USER\\Desktop\\Notes\\COMP 455\\COMP 455 Project\\diamonds.csv')
+attach(diamonds)
+subset <- diamonds[, c(2, 8)]
+set.seed(10)
+Kcluster <- kmeans(subset, 2, nstart=10)
+plot(subset, col=(Kcluster$cluster +1), main="K-means result with 2 clusters")

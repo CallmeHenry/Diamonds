@@ -1,0 +1,6 @@
+diamonds <- read.csv('C:\\Users\\USER\\Desktop\\Notes\\COMP 455\\COMP 455 Project\\diamonds.csv')
+attach(diamonds)
+linmod <- lm(price ~ carat)
+linmod
+plot(carat, price)
+abline(linmod)

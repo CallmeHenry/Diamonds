@@ -1,0 +1,6 @@
+diamonds <- read.csv('C:\\Users\\USER\\Desktop\\Notes\\COMP 455\\COMP 455 Project\\diamonds.csv')
+attach(diamonds)
+mySample <- diamonds[sample(1:nrow(diamonds), 50, replace=FALSE),]
+distanceMatrix <- dist(as.matrix(mySample[, c(2, 8)]))
+hc <- hclust(distanceMatrix)
+plot(hc)

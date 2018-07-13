@@ -1,7 +1,7 @@
 >Henry Nguyen
 <br>December 4 2017</br>
 
-# Extreme Programming: Distributed Programming and Cluster Computing with Big Data
+# Extreme Programming with Diamonds
 
 ## Details of Implementation and Design Choices
 
